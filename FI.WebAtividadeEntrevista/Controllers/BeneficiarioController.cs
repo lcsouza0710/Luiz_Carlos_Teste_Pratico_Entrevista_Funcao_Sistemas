@@ -17,9 +17,9 @@ namespace FI.WebAtividadeEntrevista.Controllers
             return View();
         }
 
-        public ActionResult Incluir(long? IdCliente)
+        public PartialViewResult Incluir(long? IdCliente)
         {
-            return View();
+            return PartialView();
         }
 
         [HttpPost]

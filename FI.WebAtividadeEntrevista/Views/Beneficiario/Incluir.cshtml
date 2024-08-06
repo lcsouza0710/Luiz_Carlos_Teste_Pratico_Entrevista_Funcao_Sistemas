@@ -3,7 +3,7 @@
         <div class="col-md-4">
             <div class="form-group">
                 <label for="CPF">CPF:</label>
-                <input required="required" type="text" class="form-control" id="CPF" name="CPF" placeholder="999.999.999-99" maxlength="14" />
+                <input required="required" type="text" class="form-control cpf-mask" id="CPF" name="CPF" placeholder="999.999.999-99" maxlength="14" />
             </div>
         </div>
         <div class="col-md-6">
@@ -13,7 +13,9 @@
             </div>
         </div>
         <div class="col-md-2">
-            <button type="button" class="btn btn-success">Incluir</button>
+            <div class="form-group">
+                <button type="button" id="btnAddBenef" class="btn btn-success my-2">Incluir</button>
+            </div>
         </div>
     </div>
 </form>

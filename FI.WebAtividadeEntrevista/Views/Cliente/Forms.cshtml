@@ -19,7 +19,7 @@
         <div class="col-md-6">
             <div class="form-group">
                 <label for="CPF">CPF:</label>
-                <input required="required" class="form-control" id="CPF" name="CPF" placeholder="999.999.999-99" maxlength="14" />
+                <input required="required" class="form-control cpf-mask" id="CPF" name="CPF" placeholder="999.999.999-99" maxlength="14" />
             </div>
         </div>
         <div class="col-md-6">
@@ -90,7 +90,11 @@
 
     <div class="row">
         <div class="col-lg-12">
-            <button id="popUpBenef" type="button" class="btn btn-sm btn-primary">Beneficiários</button>
+            <button id="popUpBenef" data-toggle="modal" data-target="#modalBenef" type="button" class="btn btn-sm btn-primary">Beneficiários</button>
         </div>
     </div>
+
+    @{
+        Html.RenderPartial("PopUpBeneficiarios");
+    }
 </form>

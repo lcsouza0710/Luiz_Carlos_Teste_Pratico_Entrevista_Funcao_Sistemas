@@ -202,12 +202,12 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Beneficiarios\FI.Beneficiarios.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Clientes\FI.AltClientes.js" />
     <Content Include="Scripts\Clientes\FI.Clientes.js" />
     <Content Include="Scripts\Clientes\FI.ListClientes.js" />
-    <Content Include="Scripts\Clientes\FI.PopUpCaller.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -373,7 +373,7 @@
     <Content Include="Views\Beneficiario\Incluir.cshtml" />
     <Content Include="Views\Beneficiario\Listagem.cshtml" />
     <Content Include="Views\Beneficiario\Alterar.cshtml" />
-    <Content Include="Views\Beneficiario\PopUpBeneficiarios.cshtml" />
+    <Content Include="Views\Cliente\PopUpBeneficiarios.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\themes\base\minified\images\" />

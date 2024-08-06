@@ -5,11 +5,11 @@
 @section scripts{
     <script>
         var urlPost = '@Url.Action("Incluir", "Cliente", new { area = "" })';
+        var urlIncluirBeneficiario = '@Url.Action("Incluir", "Beneficiario")';
+
     </script>
     @Scripts.Render("~/bundles/jQueryMask")
     @Scripts.Render("~/bundles/clientes")
 }
 <h2>@Html.Raw(ViewBag.Title)</h2>
 @Html.Partial("Forms")
-
-@Html.Action("PopUpBeneficiarios", "Beneficiario", null)

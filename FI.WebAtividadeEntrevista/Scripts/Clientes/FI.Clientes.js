@@ -1,7 +1,6 @@
 ﻿
 $(document).ready(function () {
-
-    $("#CPF").mask("000.000.000-00", { reverse: true });
+    $(".cpf-mask").mask("000.000.000-00", { reverse: true });
     $('#formCadastro').submit(function (e) {
         e.preventDefault();
         $.ajax({
@@ -35,6 +34,19 @@ $(document).ready(function () {
     })
     
 })
+
+$("#modalBenef").on('show.bs.modal', function (e) {
+
+    $.ajax({
+        url: urlIncluirBeneficiario,
+        method: 'GET',
+        success: function (data) {
+            $('#popUpBody').html(data);
+        }
+    })
+
+})
+
 
 function ModalDialog(titulo, texto) {
     var random = Math.random().toString().replace('.', '');
